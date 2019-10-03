@@ -9,8 +9,13 @@ import {
   Icon,
   Text,
 } from 'native-base';
+
+import {Platform} from 'react-native';
+
 export default class App extends Component {
   render() {
+    const {OS} = Platform;
+
     return (
       <Container>
         <Header />
@@ -31,7 +36,7 @@ export default class App extends Component {
             </Button>
             <Button vertical>
               <Icon name="person" />
-              <Text>Contact</Text>
+              <Text>{OS}</Text>
             </Button>
           </FooterTab>
         </Footer>
