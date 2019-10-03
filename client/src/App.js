@@ -45,9 +45,6 @@ const App: () => React$Node = () => {
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: 'lighter',
-  },
   engine: {
     position: 'absolute',
     right: 0,
@@ -68,13 +65,11 @@ const styles = StyleSheet.create({
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
-    color: 'dark',
   },
   highlight: {
     fontWeight: '700',
   },
   footer: {
-    color: 'dark',
     fontSize: 12,
     fontWeight: '600',
     padding: 4,
