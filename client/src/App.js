@@ -10,33 +10,25 @@ import {
   Text,
 } from 'native-base';
 
-import {Platform} from 'react-native';
+import CustomerScreen from './screens/customer';
 
 export default class App extends Component {
   render() {
-    const {OS} = Platform;
-
     return (
       <Container>
         <Header />
-        <Content />
+        <Content>
+          <CustomerScreen />
+        </Content>
         <Footer>
           <FooterTab>
-            <Button vertical>
-              <Icon name="apps" />
-              <Text>Apps</Text>
-            </Button>
-            <Button vertical>
-              <Icon name="camera" />
-              <Text>Camera</Text>
-            </Button>
             <Button vertical active>
-              <Icon active name="navigate" />
-              <Text>Navigate</Text>
+              <Icon active name="ios-people" />
+              <Text>Clientes</Text>
             </Button>
             <Button vertical>
-              <Icon name="person" />
-              <Text>{OS}</Text>
+              <Icon name="settings" />
+              <Text>Configurações</Text>
             </Button>
           </FooterTab>
         </Footer>
